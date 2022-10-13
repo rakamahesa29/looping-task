@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Looping </title>
+</head>
+<body>
+    <section>
+        <div class="container">
+            <h2>looping 100</h2>
+        </div>
+        <div class="text">
+            <p id="Loop"></p>
+        </div>
+    </section>
+</body>
+<script>
+    let text = "";
+
+    for (let i = 1; i < 101; i++) {
+        if (i % 3 == 0 && i % 5 == 0 ) {
+            text += "tigalima " + "<br>";
+        } else if (i % 5 == 0) {
+            text += "lima " + "<br>";
+        } else if (i % 3 == 0) {
+            text += "tiga " + "<br>";
+        } else {
+            text += "Nomernya adalah " + i + "<br>";
+        }
+    }
+
+    document.getElementById("Loop").innerHTML = text;
+
+</script>
+</html>
